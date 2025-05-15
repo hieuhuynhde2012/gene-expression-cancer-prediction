@@ -1,0 +1,11 @@
+__pycache__/
+# *.pyc
+# *.pyo
+# *.log
+# *.ipynb
+# *.csv
+# *.sqlite
+# *.db
+data/      # bỏ không gửi data vào context vì đã mount riêng
+venv/
+.env
