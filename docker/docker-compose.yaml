@@ -1,10 +1,10 @@
 version: '3.8'
 
-x-airflow-common:
-  &airflow-common
-  build: .
-  environment:
-    &airflow-common-env
+x-airflow-common: &airflow-common
+  build:
+    context: ../        
+    dockerfile: docker/airflow/Dockerfile
+  environment: &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
     AIRFLOW__CORE__FERNET_KEY: ''
@@ -12,12 +12,10 @@ x-airflow-common:
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
     _PIP_ADDITIONAL_REQUIREMENTS: "--no-cache-dir -r /requirements.txt"
   volumes:
-    - ./dags:/opt/airflow/dags
-    - ./logs:/opt/airflow/logs
-    - ./plugins:/opt/airflow/plugins
-    - ./requirements.txt:/requirements.txt
-    - ./data:/opt/airflow/data               # Mounting data directory
-  # user: "${AIRFLOW_UID:-50000}:0"
+    - ../etl/dags:/opt/airflow/dags
+    - ../etl/logs:/opt/airflow/logs
+    - ./airflow/requirements.txt:/requirements.txt
+    - ../data:/opt/airflow/data
   depends_on:
     postgres:
       condition: service_healthy
@@ -105,6 +103,35 @@ services:
     restart: always
     networks:
       - data_network
+
+  dbt:
+    container_name: dbt
+    build:
+      context: ./dbt
+    volumes:
+      - ../dwh:/app/dwh
+    working_dir: /app/dwh
+    command: ["dbt", "run"]
+    networks:
+      - data_network
+    depends_on:
+      - postgres
+    restart: unless-stopped
+
+  mlflow:
+    container_name: mlflow
+    build:
+      context: ./mlflow
+    ports:
+      - "5000:5000"
+    volumes:
+      - ../mlruns:/mlflow/mlruns
+    environment:
+      MLFLOW_TRACKING_URI: "http://0.0.0.0:5000"
+    command: mlflow server --host 0.0.0.0 --port 5000 --default-artifact-root ./mlruns
+    networks:
+      - data_network
+    restart: unless-stopped
 
 volumes:
   postgres_data:

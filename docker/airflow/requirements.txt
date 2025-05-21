@@ -1,4 +1,5 @@
 pandas
+pyspark
 numpy
 scikit-learn
 seaborn
