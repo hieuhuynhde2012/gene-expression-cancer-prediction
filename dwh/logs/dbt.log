@@ -1,0 +1,586 @@
+[0m03:29:08.376858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb25a13790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb23836d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb23836ac0>]}
+
+
+============================== 03:29:08.384165 | 29e97f04-db7a-4c17-b9d1-168c4eb67a31 ==============================
+[0m03:29:08.384165 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:29:08.386534 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'use_experimental_parser': 'False', 'version_check': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'introspect': 'True', 'profiles_dir': '/root/.dbt', 'target_path': 'None', 'use_colors': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'log_path': '/app/dwh/logs', 'invocation_command': 'dbt run', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'warn_error': 'None', 'partial_parse': 'True', 'log_cache_events': 'False', 'static_parser': 'True', 'log_format': 'default', 'indirect_selection': 'eager', 'debug': 'False'}
+[0m03:29:08.528652 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:29:08.529491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '29e97f04-db7a-4c17-b9d1-168c4eb67a31', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb22f213a0>]}
+[0m03:29:08.592891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '29e97f04-db7a-4c17-b9d1-168c4eb67a31', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb22fb23d0>]}
+[0m03:29:08.666353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '29e97f04-db7a-4c17-b9d1-168c4eb67a31', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb23805190>]}
+[0m03:29:08.684844 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:29:08.694789 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:29:08.700121 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:29:08.702484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '29e97f04-db7a-4c17-b9d1-168c4eb67a31', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb22ac39d0>]}
+[0m03:29:09.577117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '29e97f04-db7a-4c17-b9d1-168c4eb67a31', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb2235b0d0>]}
+[0m03:29:09.614566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '29e97f04-db7a-4c17-b9d1-168c4eb67a31', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb2231b670>]}
+[0m03:29:09.615546 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:29:09.616511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '29e97f04-db7a-4c17-b9d1-168c4eb67a31', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb22ac3e80>]}
+[0m03:29:09.618492 [info ] [MainThread]: 
+[0m03:29:09.619740 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:29:09.620834 [debug] [MainThread]: Command end result
+[0m03:29:09.640170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb25a13790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb23805190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb227bf340>]}
+[0m03:29:09.642170 [debug] [MainThread]: Flushing usage events
+[0m03:29:14.492046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf8a145e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccfa8d81c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf6785d60>]}
+
+
+============================== 03:29:14.494997 | c93f29e7-2ece-448f-a482-2119457f6796 ==============================
+[0m03:29:14.494997 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:29:14.496809 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'fail_fast': 'False', 'log_format': 'default', 'use_colors': 'True', 'printer_width': '80', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'partial_parse': 'True', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'write_json': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'static_parser': 'True', 'profiles_dir': '/root/.dbt', 'invocation_command': 'dbt run', 'log_cache_events': 'False', 'debug': 'False', 'quiet': 'False', 'log_path': '/app/dwh/logs', 'indirect_selection': 'eager'}
+[0m03:29:14.574441 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:29:14.575526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c93f29e7-2ece-448f-a482-2119457f6796', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf60e9100>]}
+[0m03:29:14.639761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c93f29e7-2ece-448f-a482-2119457f6796', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccfa8d81c0>]}
+[0m03:29:14.712960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c93f29e7-2ece-448f-a482-2119457f6796', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf678c7f0>]}
+[0m03:29:14.715729 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:29:14.725294 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:29:14.774909 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:29:14.776455 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:29:14.781729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c93f29e7-2ece-448f-a482-2119457f6796', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf585f0d0>]}
+[0m03:29:14.800536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c93f29e7-2ece-448f-a482-2119457f6796', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf59084f0>]}
+[0m03:29:14.801452 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:29:14.803466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c93f29e7-2ece-448f-a482-2119457f6796', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf5908790>]}
+[0m03:29:14.806168 [info ] [MainThread]: 
+[0m03:29:14.807516 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:29:14.808759 [debug] [MainThread]: Command end result
+[0m03:29:14.939974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf8a145e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf678c7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccf5d04c10>]}
+[0m03:29:14.942526 [debug] [MainThread]: Flushing usage events
+[0m03:29:18.631806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45c5e63760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45c3bda8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45c3bdacd0>]}
+
+
+============================== 03:29:18.635593 | 281edd79-926c-490f-a333-066566549ef6 ==============================
+[0m03:29:18.635593 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:29:18.636519 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'indirect_selection': 'eager', 'fail_fast': 'False', 'static_parser': 'True', 'log_path': '/app/dwh/logs', 'no_print': 'None', 'debug': 'False', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'printer_width': '80', 'use_colors': 'True', 'partial_parse': 'True', 'write_json': 'True', 'log_cache_events': 'False', 'quiet': 'False', 'warn_error': 'None', 'use_experimental_parser': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt run'}
+[0m03:29:18.721007 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:29:18.722466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '281edd79-926c-490f-a333-066566549ef6', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45c333d130>]}
+[0m03:29:18.785881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '281edd79-926c-490f-a333-066566549ef6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45c7d26160>]}
+[0m03:29:18.861569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '281edd79-926c-490f-a333-066566549ef6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45c3b92f10>]}
+[0m03:29:18.863050 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:29:18.871312 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:29:18.918719 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:29:18.920429 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:29:18.925432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '281edd79-926c-490f-a333-066566549ef6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45c2a5f0d0>]}
+[0m03:29:18.948092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '281edd79-926c-490f-a333-066566549ef6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45c2b0d520>]}
+[0m03:29:18.949254 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:29:18.950464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '281edd79-926c-490f-a333-066566549ef6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45c2b0d730>]}
+[0m03:29:18.952524 [info ] [MainThread]: 
+[0m03:29:18.953441 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:29:18.954583 [debug] [MainThread]: Command end result
+[0m03:29:18.970948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45c5e63760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45c3319040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45c2b0d520>]}
+[0m03:29:18.971875 [debug] [MainThread]: Flushing usage events
+[0m03:29:22.860675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c787fea00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c7656e490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c7656e340>]}
+
+
+============================== 03:29:22.863548 | bf122c4f-0d1b-4ab8-8339-8960122d3529 ==============================
+[0m03:29:22.863548 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:29:22.864584 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/root/.dbt', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'no_print': 'None', 'fail_fast': 'False', 'cache_selected_only': 'False', 'write_json': 'True', 'warn_error': 'None', 'invocation_command': 'dbt run', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'printer_width': '80', 'log_path': '/app/dwh/logs', 'partial_parse': 'True', 'quiet': 'False', 'debug': 'False', 'log_format': 'default', 'target_path': 'None', 'use_experimental_parser': 'False'}
+[0m03:29:22.942330 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:29:22.943515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'bf122c4f-0d1b-4ab8-8339-8960122d3529', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c75ed2370>]}
+[0m03:29:23.008200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bf122c4f-0d1b-4ab8-8339-8960122d3529', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c75f1cc70>]}
+[0m03:29:23.085523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bf122c4f-0d1b-4ab8-8339-8960122d3529', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c75bd8f40>]}
+[0m03:29:23.087064 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:29:23.095508 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:29:23.144016 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:29:23.146468 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:29:23.151831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bf122c4f-0d1b-4ab8-8339-8960122d3529', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c7565f0d0>]}
+[0m03:29:23.173552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bf122c4f-0d1b-4ab8-8339-8960122d3529', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c7570b520>]}
+[0m03:29:23.175015 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:29:23.177519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bf122c4f-0d1b-4ab8-8339-8960122d3529', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c7570b6d0>]}
+[0m03:29:23.179718 [info ] [MainThread]: 
+[0m03:29:23.180486 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:29:23.181868 [debug] [MainThread]: Command end result
+[0m03:29:23.196253 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c787fea00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c75bd8f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5c75ed2d30>]}
+[0m03:29:23.197893 [debug] [MainThread]: Flushing usage events
+[0m03:29:27.595519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85101766d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85120381f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f850dee6a60>]}
+
+
+============================== 03:29:27.598508 | 05e8b700-f0ba-4f19-b340-1a3f0a59812c ==============================
+[0m03:29:27.598508 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:29:27.599862 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'use_experimental_parser': 'False', 'log_format': 'default', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'fail_fast': 'False', 'use_colors': 'True', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'log_path': '/app/dwh/logs', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'version_check': 'True', 'printer_width': '80', 'warn_error': 'None', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'introspect': 'True', 'quiet': 'False', 'partial_parse': 'True'}
+[0m03:29:27.679057 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:29:27.680466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '05e8b700-f0ba-4f19-b340-1a3f0a59812c', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f850d5c9940>]}
+[0m03:29:27.745920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '05e8b700-f0ba-4f19-b340-1a3f0a59812c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85120381f0>]}
+[0m03:29:27.826763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '05e8b700-f0ba-4f19-b340-1a3f0a59812c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f850d558820>]}
+[0m03:29:27.829139 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:29:27.837575 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:29:27.886230 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:29:27.887791 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:29:27.892921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '05e8b700-f0ba-4f19-b340-1a3f0a59812c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f850cd9f0d0>]}
+[0m03:29:27.912615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '05e8b700-f0ba-4f19-b340-1a3f0a59812c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f850d08b580>]}
+[0m03:29:27.914600 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:29:27.915496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '05e8b700-f0ba-4f19-b340-1a3f0a59812c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f850d08b730>]}
+[0m03:29:27.917206 [info ] [MainThread]: 
+[0m03:29:27.918293 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:29:27.919720 [debug] [MainThread]: Command end result
+[0m03:29:28.201373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85101766d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f85120381f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f850d5e51f0>]}
+[0m03:29:28.202719 [debug] [MainThread]: Flushing usage events
+[0m03:29:33.118120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a405eea00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a3e35e490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a3e35e340>]}
+
+
+============================== 03:29:33.121312 | 9de863bb-5a07-4b68-bbdb-e8d5ea9d3910 ==============================
+[0m03:29:33.121312 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:29:33.122987 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'use_colors': 'True', 'cache_selected_only': 'False', 'version_check': 'True', 'static_parser': 'True', 'log_path': '/app/dwh/logs', 'no_print': 'None', 'debug': 'False', 'introspect': 'True', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'write_json': 'True', 'profiles_dir': '/root/.dbt', 'indirect_selection': 'eager', 'warn_error': 'None', 'partial_parse': 'True', 'printer_width': '80', 'log_format': 'default', 'use_experimental_parser': 'False', 'log_cache_events': 'False'}
+[0m03:29:33.205937 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:29:33.207040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '9de863bb-5a07-4b68-bbdb-e8d5ea9d3910', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a3dcc2370>]}
+[0m03:29:33.279373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9de863bb-5a07-4b68-bbdb-e8d5ea9d3910', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a3dd0bc70>]}
+[0m03:29:33.356720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9de863bb-5a07-4b68-bbdb-e8d5ea9d3910', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a3d9d7f40>]}
+[0m03:29:33.359531 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:29:33.366686 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:29:33.413412 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:29:33.415287 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:29:33.421346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9de863bb-5a07-4b68-bbdb-e8d5ea9d3910', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a3d45f0d0>]}
+[0m03:29:33.442540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9de863bb-5a07-4b68-bbdb-e8d5ea9d3910', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a3d50b520>]}
+[0m03:29:33.445848 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:29:33.447332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9de863bb-5a07-4b68-bbdb-e8d5ea9d3910', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a3d50b6d0>]}
+[0m03:29:33.449318 [info ] [MainThread]: 
+[0m03:29:33.450568 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:29:33.451685 [debug] [MainThread]: Command end result
+[0m03:29:33.467864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a405eea00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a3d9d7f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9a3dcc2d30>]}
+[0m03:29:33.469585 [debug] [MainThread]: Flushing usage events
+[0m03:29:40.342405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63fe230a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63fbfa0490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63fbfa0340>]}
+
+
+============================== 03:29:40.345433 | fb711b5f-1548-4cb4-8fbb-286ec0535847 ==============================
+[0m03:29:40.345433 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:29:40.347371 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'quiet': 'False', 'profiles_dir': '/root/.dbt', 'introspect': 'True', 'warn_error': 'None', 'printer_width': '80', 'invocation_command': 'dbt run', 'use_colors': 'True', 'static_parser': 'True', 'target_path': 'None', 'no_print': 'None', 'cache_selected_only': 'False', 'write_json': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'debug': 'False', 'version_check': 'True', 'log_path': '/app/dwh/logs', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])'}
+[0m03:29:40.478044 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:29:40.480254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'fb711b5f-1548-4cb4-8fbb-286ec0535847', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63fb365370>]}
+[0m03:29:40.544611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fb711b5f-1548-4cb4-8fbb-286ec0535847', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63fb3afc70>]}
+[0m03:29:40.619394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fb711b5f-1548-4cb4-8fbb-286ec0535847', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63fb2d7f40>]}
+[0m03:29:40.620950 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:29:40.628414 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:29:40.681251 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:29:40.683409 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:29:40.689909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fb711b5f-1548-4cb4-8fbb-286ec0535847', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63fabdf0d0>]}
+[0m03:29:40.714529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fb711b5f-1548-4cb4-8fbb-286ec0535847', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63faecb520>]}
+[0m03:29:40.716535 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:29:40.718320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fb711b5f-1548-4cb4-8fbb-286ec0535847', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63faecb6d0>]}
+[0m03:29:40.720635 [info ] [MainThread]: 
+[0m03:29:40.722573 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:29:40.724574 [debug] [MainThread]: Command end result
+[0m03:29:40.743730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63fe230a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63fb2d7f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63fb365d30>]}
+[0m03:29:40.745185 [debug] [MainThread]: Flushing usage events
+[0m03:29:51.087314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7678aff4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76768758b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7676875cd0>]}
+
+
+============================== 03:29:51.090558 | 1866f98c-7144-411a-b07f-eb31b2664c97 ==============================
+[0m03:29:51.090558 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:29:51.091702 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'invocation_command': 'dbt run', 'log_format': 'default', 'write_json': 'True', 'target_path': 'None', 'indirect_selection': 'eager', 'profiles_dir': '/root/.dbt', 'use_experimental_parser': 'False', 'debug': 'False', 'log_path': '/app/dwh/logs', 'warn_error': 'None', 'partial_parse': 'True', 'printer_width': '80', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'use_colors': 'True', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'introspect': 'True', 'no_print': 'None'}
+[0m03:29:51.173007 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:29:51.174015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1866f98c-7144-411a-b07f-eb31b2664c97', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7675fed130>]}
+[0m03:29:51.247964 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1866f98c-7144-411a-b07f-eb31b2664c97', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f767a9c2130>]}
+[0m03:29:51.326808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1866f98c-7144-411a-b07f-eb31b2664c97', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f767682ef10>]}
+[0m03:29:51.328876 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:29:51.340248 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:29:51.392900 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:29:51.395522 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:29:51.400741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1866f98c-7144-411a-b07f-eb31b2664c97', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f767571f0d0>]}
+[0m03:29:51.420445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1866f98c-7144-411a-b07f-eb31b2664c97', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76757cd520>]}
+[0m03:29:51.422421 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:29:51.424251 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1866f98c-7144-411a-b07f-eb31b2664c97', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76757cd730>]}
+[0m03:29:51.426214 [info ] [MainThread]: 
+[0m03:29:51.426935 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:29:51.428545 [debug] [MainThread]: Command end result
+[0m03:29:51.447259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7678aff4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7675fc9040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76757cd520>]}
+[0m03:29:51.448618 [debug] [MainThread]: Flushing usage events
+[0m03:30:08.559545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f59b9c165e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f59bbad91c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f59b7986d60>]}
+
+
+============================== 03:30:08.562552 | 5e316c40-b016-43d4-805b-2d3b94672f4b ==============================
+[0m03:30:08.562552 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:30:08.564369 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'introspect': 'True', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'write_json': 'True', 'partial_parse': 'True', 'use_colors': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'invocation_command': 'dbt run', 'log_path': '/app/dwh/logs', 'fail_fast': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error': 'None', 'log_format': 'default', 'version_check': 'True', 'profiles_dir': '/root/.dbt'}
+[0m03:30:08.641468 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:30:08.643281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '5e316c40-b016-43d4-805b-2d3b94672f4b', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f59b6d65100>]}
+[0m03:30:08.708958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5e316c40-b016-43d4-805b-2d3b94672f4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f59bbad91c0>]}
+[0m03:30:08.783520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5e316c40-b016-43d4-805b-2d3b94672f4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f59b798c7f0>]}
+[0m03:30:08.785497 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:30:08.792508 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:30:08.838573 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:30:08.840276 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:30:08.845274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5e316c40-b016-43d4-805b-2d3b94672f4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f59b65df0d0>]}
+[0m03:30:08.864066 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5e316c40-b016-43d4-805b-2d3b94672f4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f59b68cb4f0>]}
+[0m03:30:08.865884 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:30:08.867700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5e316c40-b016-43d4-805b-2d3b94672f4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f59b68cb790>]}
+[0m03:30:08.869635 [info ] [MainThread]: 
+[0m03:30:08.871301 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:30:08.872354 [debug] [MainThread]: Command end result
+[0m03:30:08.888887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f59b9c165e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f59b798c7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f59b69c4c10>]}
+[0m03:30:08.890708 [debug] [MainThread]: Flushing usage events
+[0m03:30:37.978880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5836beba00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f583495b490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f583495b340>]}
+
+
+============================== 03:30:37.981925 | 14ddab76-42c9-4811-84b5-71e846c1b963 ==============================
+[0m03:30:37.981925 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:30:37.983477 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_cache_events': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'fail_fast': 'False', 'log_path': '/app/dwh/logs', 'indirect_selection': 'eager', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'static_parser': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'write_json': 'True', 'warn_error': 'None', 'printer_width': '80', 'profiles_dir': '/root/.dbt', 'invocation_command': 'dbt run', 'use_colors': 'True', 'quiet': 'False', 'cache_selected_only': 'False'}
+[0m03:30:38.060677 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:30:38.061885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '14ddab76-42c9-4811-84b5-71e846c1b963', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f58342bf370>]}
+[0m03:30:38.128307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '14ddab76-42c9-4811-84b5-71e846c1b963', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5834308c70>]}
+[0m03:30:38.202400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '14ddab76-42c9-4811-84b5-71e846c1b963', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5833fd7f40>]}
+[0m03:30:38.204994 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:30:38.212367 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:30:38.270376 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:30:38.272418 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:30:38.277832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '14ddab76-42c9-4811-84b5-71e846c1b963', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5833a5f0d0>]}
+[0m03:30:38.299576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '14ddab76-42c9-4811-84b5-71e846c1b963', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5833b0e520>]}
+[0m03:30:38.302519 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:30:38.303957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '14ddab76-42c9-4811-84b5-71e846c1b963', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5833b0e6d0>]}
+[0m03:30:38.306395 [info ] [MainThread]: 
+[0m03:30:38.307995 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:30:38.309807 [debug] [MainThread]: Command end result
+[0m03:30:38.327437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5836beba00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5833fd7f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f58342bfd30>]}
+[0m03:30:38.328594 [debug] [MainThread]: Flushing usage events
+[0m03:31:02.926023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d5067f760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d4e3f38b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d4e3f3cd0>]}
+
+
+============================== 03:31:02.929410 | 42effe01-634c-498a-94d3-ecb38ccb4e05 ==============================
+[0m03:31:02.929410 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:31:02.930395 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'profiles_dir': '/root/.dbt', 'static_parser': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'target_path': 'None', 'log_cache_events': 'False', 'quiet': 'False', 'indirect_selection': 'eager', 'use_colors': 'True', 'log_format': 'default', 'write_json': 'True', 'no_print': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'log_path': '/app/dwh/logs', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'fail_fast': 'False', 'cache_selected_only': 'False', 'partial_parse': 'True'}
+[0m03:31:03.008545 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:31:03.010315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '42effe01-634c-498a-94d3-ecb38ccb4e05', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d4db7d130>]}
+[0m03:31:03.075972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '42effe01-634c-498a-94d3-ecb38ccb4e05', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d52543160>]}
+[0m03:31:03.150693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '42effe01-634c-498a-94d3-ecb38ccb4e05', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d4e3b0f10>]}
+[0m03:31:03.152757 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:31:03.162292 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:31:03.213805 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:31:03.214728 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:31:03.220328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '42effe01-634c-498a-94d3-ecb38ccb4e05', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d4d29f0d0>]}
+[0m03:31:03.239386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '42effe01-634c-498a-94d3-ecb38ccb4e05', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d4d34d520>]}
+[0m03:31:03.240464 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:31:03.242282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '42effe01-634c-498a-94d3-ecb38ccb4e05', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d4d34d730>]}
+[0m03:31:03.243935 [info ] [MainThread]: 
+[0m03:31:03.245315 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:31:03.246491 [debug] [MainThread]: Command end result
+[0m03:31:03.262690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d5067f760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d4db59040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d4d34d520>]}
+[0m03:31:03.264345 [debug] [MainThread]: Flushing usage events
+[0m03:31:07.805712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0273745e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0292371c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0250e4d60>]}
+
+
+============================== 03:31:07.808688 | 180e0ecb-d68d-4d1b-b68c-e25591588c39 ==============================
+[0m03:31:07.808688 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:31:07.810366 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'debug': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt run', 'printer_width': '80', 'write_json': 'True', 'log_format': 'default', 'version_check': 'True', 'log_path': '/app/dwh/logs', 'static_parser': 'True', 'use_colors': 'True', 'introspect': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'quiet': 'False'}
+[0m03:31:07.890781 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:31:07.893325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '180e0ecb-d68d-4d1b-b68c-e25591588c39', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0247e5100>]}
+[0m03:31:07.957887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '180e0ecb-d68d-4d1b-b68c-e25591588c39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0292371c0>]}
+[0m03:34:17.354355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2038dc6a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2036b88e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2036b88eb0>]}
+
+
+============================== 03:34:17.359646 | 0a472fca-ce07-4265-b2db-29168efcdd23 ==============================
+[0m03:34:17.359646 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:34:17.360661 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'indirect_selection': 'eager', 'target_path': 'None', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'fail_fast': 'False', 'profiles_dir': '/root/.dbt', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'introspect': 'True', 'write_json': 'True', 'log_path': '/app/dwh/logs', 'partial_parse': 'True', 'use_colors': 'True', 'quiet': 'False', 'no_print': 'None', 'warn_error': 'None', 'log_format': 'default', 'version_check': 'True', 'static_parser': 'True'}
+[0m03:34:17.437183 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:34:17.438520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '0a472fca-ce07-4265-b2db-29168efcdd23', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20364c9b50>]}
+[0m03:34:17.502799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0a472fca-ce07-4265-b2db-29168efcdd23', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2036b80610>]}
+[0m03:34:17.576711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0a472fca-ce07-4265-b2db-29168efcdd23', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2036478910>]}
+[0m03:34:17.578753 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:34:17.585523 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:34:17.629552 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:34:17.630490 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:34:17.635103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0a472fca-ce07-4265-b2db-29168efcdd23', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2035c5f0d0>]}
+[0m03:34:17.652635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0a472fca-ce07-4265-b2db-29168efcdd23', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2035d0c7c0>]}
+[0m03:34:17.653880 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:34:17.654994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0a472fca-ce07-4265-b2db-29168efcdd23', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2035d0c970>]}
+[0m03:34:17.657587 [info ] [MainThread]: 
+[0m03:34:17.658464 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:34:17.659669 [debug] [MainThread]: Command end result
+[0m03:34:17.678640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2038dc6a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2036478910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20361da760>]}
+[0m03:34:17.681682 [debug] [MainThread]: Flushing usage events
+[0m03:34:25.263296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b5346a6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b5532c1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b511daa60>]}
+
+
+============================== 03:34:25.266227 | 3595bef9-16da-4968-a858-976f20cf3724 ==============================
+[0m03:34:25.266227 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:34:25.267630 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run', 'warn_error': 'None', 'profiles_dir': '/root/.dbt', 'log_path': '/app/dwh/logs', 'fail_fast': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'introspect': 'True', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'log_format': 'default', 'write_json': 'True', 'printer_width': '80', 'debug': 'False', 'use_colors': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'partial_parse': 'True'}
+[0m03:34:25.347143 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:34:25.348535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '3595bef9-16da-4968-a858-976f20cf3724', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b50589940>]}
+[0m03:34:25.413162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3595bef9-16da-4968-a858-976f20cf3724', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b5532c1f0>]}
+[0m03:34:25.487929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3595bef9-16da-4968-a858-976f20cf3724', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b50518820>]}
+[0m03:34:25.489761 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:34:25.496813 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:34:25.542755 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:34:25.543540 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:34:25.548657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3595bef9-16da-4968-a858-976f20cf3724', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b5005f0d0>]}
+[0m03:34:25.568699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3595bef9-16da-4968-a858-976f20cf3724', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b50108580>]}
+[0m03:34:25.570647 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:34:25.571587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3595bef9-16da-4968-a858-976f20cf3724', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b50108730>]}
+[0m03:34:25.573172 [info ] [MainThread]: 
+[0m03:34:25.573951 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:34:25.575878 [debug] [MainThread]: Command end result
+[0m03:34:25.592260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b5346a6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b5532c1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4b505a51f0>]}
+[0m03:34:25.593923 [debug] [MainThread]: Flushing usage events
+[0m03:34:30.445385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9fb665a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9f93d5490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9f93d5340>]}
+
+
+============================== 03:34:30.448459 | a41cda5d-06bc-46d2-9a05-cd3e925eed20 ==============================
+[0m03:34:30.448459 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:34:30.449691 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'cache_selected_only': 'False', 'partial_parse': 'True', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'use_experimental_parser': 'False', 'debug': 'False', 'static_parser': 'True', 'log_path': '/app/dwh/logs', 'no_print': 'None', 'write_json': 'True', 'printer_width': '80', 'introspect': 'True', 'use_colors': 'True', 'version_check': 'True', 'invocation_command': 'dbt run', 'quiet': 'False', 'fail_fast': 'False', 'profiles_dir': '/root/.dbt', 'target_path': 'None', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None'}
+[0m03:34:30.527444 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:34:30.528709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'a41cda5d-06bc-46d2-9a05-cd3e925eed20', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9f87a5370>]}
+[0m03:34:30.593040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a41cda5d-06bc-46d2-9a05-cd3e925eed20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9f87efc70>]}
+[0m03:34:30.668144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a41cda5d-06bc-46d2-9a05-cd3e925eed20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9f8717f40>]}
+[0m03:34:30.670837 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:34:30.677671 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:34:30.725935 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:34:30.728303 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:34:30.733121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a41cda5d-06bc-46d2-9a05-cd3e925eed20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9f825f0d0>]}
+[0m03:34:30.752538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a41cda5d-06bc-46d2-9a05-cd3e925eed20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9f830b520>]}
+[0m03:34:30.754499 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:34:30.755764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a41cda5d-06bc-46d2-9a05-cd3e925eed20', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9f830b6d0>]}
+[0m03:34:30.758006 [info ] [MainThread]: 
+[0m03:34:30.760311 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:34:30.761772 [debug] [MainThread]: Command end result
+[0m03:34:30.780073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9fb665a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9f8717f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd9f87a5d30>]}
+[0m03:34:30.781275 [debug] [MainThread]: Flushing usage events
+[0m03:34:35.813208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa33b5dbc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa33d49f1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3393466d0>]}
+
+
+============================== 03:34:35.816111 | 9a55f1c0-1f55-4483-9d95-da1fbde7da07 ==============================
+[0m03:34:35.816111 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:34:35.817881 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'debug': 'False', 'static_parser': 'True', 'profiles_dir': '/root/.dbt', 'printer_width': '80', 'log_cache_events': 'False', 'target_path': 'None', 'partial_parse': 'True', 'write_json': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'warn_error': 'None', 'log_path': '/app/dwh/logs', 'quiet': 'False', 'invocation_command': 'dbt run', 'fail_fast': 'False', 'log_format': 'default', 'indirect_selection': 'eager', 'no_print': 'None'}
+[0m03:34:35.897628 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:34:35.899384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '9a55f1c0-1f55-4483-9d95-da1fbde7da07', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa338cb0eb0>]}
+[0m03:34:35.977053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9a55f1c0-1f55-4483-9d95-da1fbde7da07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa33d49f1c0>]}
+[0m03:34:36.053256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9a55f1c0-1f55-4483-9d95-da1fbde7da07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3389f3430>]}
+[0m03:34:36.054927 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:34:36.061996 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:34:36.116761 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:34:36.118706 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:34:36.124686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9a55f1c0-1f55-4483-9d95-da1fbde7da07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3381df0d0>]}
+[0m03:34:36.145416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9a55f1c0-1f55-4483-9d95-da1fbde7da07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3384ca430>]}
+[0m03:34:36.146722 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:34:36.149339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9a55f1c0-1f55-4483-9d95-da1fbde7da07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3384ca6d0>]}
+[0m03:34:36.152145 [info ] [MainThread]: 
+[0m03:34:36.153369 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:34:36.155490 [debug] [MainThread]: Command end result
+[0m03:34:36.170249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa33b5dbc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa3389f3430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa338d369a0>]}
+[0m03:34:36.171715 [debug] [MainThread]: Flushing usage events
+[0m03:34:40.891529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf048b7a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf02627490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf02627340>]}
+
+
+============================== 03:34:40.894550 | dca74352-fbcf-40f4-b8fd-c8694c7f7117 ==============================
+[0m03:34:40.894550 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:34:40.896429 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'target_path': 'None', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'no_print': 'None', 'quiet': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_path': '/app/dwh/logs', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'printer_width': '80', 'log_cache_events': 'False', 'introspect': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'use_colors': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run'}
+[0m03:34:40.976737 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:34:40.977887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'dca74352-fbcf-40f4-b8fd-c8694c7f7117', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf01d25370>]}
+[0m03:34:41.045870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dca74352-fbcf-40f4-b8fd-c8694c7f7117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf01d6ec70>]}
+[0m03:34:41.124477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dca74352-fbcf-40f4-b8fd-c8694c7f7117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf01997f40>]}
+[0m03:34:41.125934 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:34:41.133943 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:34:41.183387 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:34:41.184297 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:34:41.189200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dca74352-fbcf-40f4-b8fd-c8694c7f7117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf014df0d0>]}
+[0m03:34:41.212171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dca74352-fbcf-40f4-b8fd-c8694c7f7117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf0158e520>]}
+[0m03:34:41.214000 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:34:41.215823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dca74352-fbcf-40f4-b8fd-c8694c7f7117', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf0158e6d0>]}
+[0m03:34:41.218852 [info ] [MainThread]: 
+[0m03:34:41.221336 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:34:41.222710 [debug] [MainThread]: Command end result
+[0m03:34:41.240169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf048b7a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf01997f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf01d25d30>]}
+[0m03:34:41.241392 [debug] [MainThread]: Flushing usage events
+[0m03:34:46.310477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fedf155e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fefdd81c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2febc85d60>]}
+
+
+============================== 03:34:46.313590 | 69e60cda-31c4-43da-8f62-d71cc9d6d44b ==============================
+[0m03:34:46.313590 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:34:46.315419 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/root/.dbt', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'static_parser': 'True', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'indirect_selection': 'eager', 'warn_error': 'None', 'partial_parse': 'True', 'debug': 'False', 'invocation_command': 'dbt run', 'use_colors': 'True', 'introspect': 'True', 'cache_selected_only': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'write_json': 'True', 'version_check': 'True', 'log_path': '/app/dwh/logs', 'log_cache_events': 'False', 'printer_width': '80', 'quiet': 'False'}
+[0m03:34:46.395693 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:34:46.397363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '69e60cda-31c4-43da-8f62-d71cc9d6d44b', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feb365100>]}
+[0m03:34:46.465923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '69e60cda-31c4-43da-8f62-d71cc9d6d44b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fefdd81c0>]}
+[0m03:34:46.553520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '69e60cda-31c4-43da-8f62-d71cc9d6d44b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2febc8a7f0>]}
+[0m03:34:46.555624 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:34:46.563672 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:34:46.611313 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:34:46.613301 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:34:46.618751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '69e60cda-31c4-43da-8f62-d71cc9d6d44b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feab1f0d0>]}
+[0m03:34:46.641506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '69e60cda-31c4-43da-8f62-d71cc9d6d44b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feabcb4f0>]}
+[0m03:34:46.643643 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:34:46.645361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '69e60cda-31c4-43da-8f62-d71cc9d6d44b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feabcb790>]}
+[0m03:34:46.647113 [info ] [MainThread]: 
+[0m03:34:46.648335 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:34:46.649460 [debug] [MainThread]: Command end result
+[0m03:34:46.669909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fedf155e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2febc8a7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2feaf04c10>]}
+[0m03:34:46.671856 [debug] [MainThread]: Flushing usage events
+[0m03:34:53.100460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d7684a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d53f4490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d53f4340>]}
+
+
+============================== 03:34:53.103977 | 773167ef-16bb-41fa-9de2-9f585683ab1f ==============================
+[0m03:34:53.103977 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:34:53.105534 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'write_json': 'True', 'use_colors': 'True', 'no_print': 'None', 'log_format': 'default', 'target_path': 'None', 'log_path': '/app/dwh/logs', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'static_parser': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'profiles_dir': '/root/.dbt', 'invocation_command': 'dbt run', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'send_anonymous_usage_stats': 'True'}
+[0m03:34:53.195056 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:34:53.196319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '773167ef-16bb-41fa-9de2-9f585683ab1f', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d47e5370>]}
+[0m03:34:53.264245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '773167ef-16bb-41fa-9de2-9f585683ab1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d4b3fc70>]}
+[0m03:34:53.340763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '773167ef-16bb-41fa-9de2-9f585683ab1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d4757f40>]}
+[0m03:34:53.342569 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:34:53.351142 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:34:53.401468 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:34:53.402589 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:34:53.408047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '773167ef-16bb-41fa-9de2-9f585683ab1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d429f0d0>]}
+[0m03:34:53.429088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '773167ef-16bb-41fa-9de2-9f585683ab1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d4348520>]}
+[0m03:34:53.431514 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:34:53.433367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '773167ef-16bb-41fa-9de2-9f585683ab1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d43486d0>]}
+[0m03:34:53.436047 [info ] [MainThread]: 
+[0m03:34:53.437310 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:34:53.438330 [debug] [MainThread]: Command end result
+[0m03:34:53.453936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d7684a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d4757f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9d47e5d30>]}
+[0m03:34:53.456683 [debug] [MainThread]: Flushing usage events
+[0m03:35:03.821399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa491d12c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa493bd41c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa48fa7b6d0>]}
+
+
+============================== 03:35:03.824439 | 8bbe77e0-79f6-4998-b9a5-2e862d4eb21d ==============================
+[0m03:35:03.824439 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:35:03.826023 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'no_print': 'None', 'profiles_dir': '/root/.dbt', 'log_format': 'default', 'indirect_selection': 'eager', 'introspect': 'True', 'quiet': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'fail_fast': 'False', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'partial_parse': 'True', 'version_check': 'True', 'log_path': '/app/dwh/logs', 'write_json': 'True', 'static_parser': 'True', 'debug': 'False', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m03:35:03.906355 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:35:03.907292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '8bbe77e0-79f6-4998-b9a5-2e862d4eb21d', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa48f165eb0>]}
+[0m03:35:03.973072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8bbe77e0-79f6-4998-b9a5-2e862d4eb21d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa493bd41c0>]}
+[0m03:35:04.050867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8bbe77e0-79f6-4998-b9a5-2e862d4eb21d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa48f133430>]}
+[0m03:35:04.053595 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:35:04.061691 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:35:04.110900 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:35:04.111821 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:35:04.117120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8bbe77e0-79f6-4998-b9a5-2e862d4eb21d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa48e91f0d0>]}
+[0m03:35:04.136703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8bbe77e0-79f6-4998-b9a5-2e862d4eb21d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa48e9cd430>]}
+[0m03:35:04.139451 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:35:04.140669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8bbe77e0-79f6-4998-b9a5-2e862d4eb21d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa48e9cd6d0>]}
+[0m03:35:04.142186 [info ] [MainThread]: 
+[0m03:35:04.142947 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:35:04.143895 [debug] [MainThread]: Command end result
+[0m03:35:04.161021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa491d12c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa48f133430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa48f1eb9a0>]}
+[0m03:35:04.162515 [debug] [MainThread]: Flushing usage events
+[0m03:35:20.809927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb82ba82a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8297f2490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8297f2340>]}
+
+
+============================== 03:35:20.813431 | b7769b9e-7d2c-41a1-8909-b56c8a77b7e4 ==============================
+[0m03:35:20.813431 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:35:20.814839 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'version_check': 'True', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'debug': 'False', 'target_path': 'None', 'profiles_dir': '/root/.dbt', 'partial_parse': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'write_json': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'no_print': 'None', 'use_colors': 'True', 'introspect': 'True', 'printer_width': '80', 'log_path': '/app/dwh/logs'}
+[0m03:35:20.894782 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:35:20.896599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'b7769b9e-7d2c-41a1-8909-b56c8a77b7e4', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb828be5370>]}
+[0m03:35:20.963300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b7769b9e-7d2c-41a1-8909-b56c8a77b7e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb828f3fc70>]}
+[0m03:35:21.038507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b7769b9e-7d2c-41a1-8909-b56c8a77b7e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb828b58f40>]}
+[0m03:35:21.039844 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:35:21.047763 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:35:21.101448 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:35:21.103214 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:35:21.110054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b7769b9e-7d2c-41a1-8909-b56c8a77b7e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb82869f0d0>]}
+[0m03:35:21.128006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b7769b9e-7d2c-41a1-8909-b56c8a77b7e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb82874b520>]}
+[0m03:35:21.129832 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:35:21.131360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b7769b9e-7d2c-41a1-8909-b56c8a77b7e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb82874b6d0>]}
+[0m03:35:21.134007 [info ] [MainThread]: 
+[0m03:35:21.135541 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:35:21.136453 [debug] [MainThread]: Command end result
+[0m03:35:21.153992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb82ba82a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb828b58f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb828be5d30>]}
+[0m03:35:21.156374 [debug] [MainThread]: Flushing usage events
+[0m03:35:52.895717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4f8927790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4f663e8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4f663ec10>]}
+
+
+============================== 03:35:52.898608 | 015e0384-cc46-421e-b5ed-37b90bb4224b ==============================
+[0m03:35:52.898608 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:35:52.900405 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'invocation_command': 'dbt run', 'version_check': 'True', 'warn_error': 'None', 'target_path': 'None', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'log_cache_events': 'False', 'write_json': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'log_path': '/app/dwh/logs', 'printer_width': '80', 'profiles_dir': '/root/.dbt', 'cache_selected_only': 'False', 'log_format': 'default', 'fail_fast': 'False', 'partial_parse': 'True'}
+[0m03:35:52.980953 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:35:52.982058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '015e0384-cc46-421e-b5ed-37b90bb4224b', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4f5d88bb0>]}
+[0m03:35:53.045829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '015e0384-cc46-421e-b5ed-37b90bb4224b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4f60865b0>]}
+[0m03:35:53.121200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '015e0384-cc46-421e-b5ed-37b90bb4224b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4f667bdf0>]}
+[0m03:35:53.124259 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:35:53.131405 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:35:53.177237 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:35:53.178331 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:35:53.183138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '015e0384-cc46-421e-b5ed-37b90bb4224b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4f555f0d0>]}
+[0m03:35:53.199120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '015e0384-cc46-421e-b5ed-37b90bb4224b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4f584e5b0>]}
+[0m03:35:53.200067 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:35:53.201268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '015e0384-cc46-421e-b5ed-37b90bb4224b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4f584e760>]}
+[0m03:35:53.203440 [info ] [MainThread]: 
+[0m03:35:53.205015 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:35:53.206132 [debug] [MainThread]: Command end result
+[0m03:35:53.219015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4f8927790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4f584e3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4f584e4f0>]}
+[0m03:35:53.221216 [debug] [MainThread]: Flushing usage events
+[0m03:36:47.790129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd11c996a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd11a6c16a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd11a6c1100>]}
+
+
+============================== 03:36:47.793439 | 0bef2679-e6c3-4719-bca6-59e5faa673d3 ==============================
+[0m03:36:47.793439 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:36:47.794625 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'profiles_dir': '/root/.dbt', 'static_parser': 'True', 'introspect': 'True', 'write_json': 'True', 'no_print': 'None', 'warn_error': 'None', 'quiet': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'target_path': 'None', 'invocation_command': 'dbt run', 'partial_parse': 'True', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'use_experimental_parser': 'False', 'debug': 'False', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'log_path': '/app/dwh/logs', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'log_format': 'default'}
+[0m03:36:47.871065 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:36:47.872379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '0bef2679-e6c3-4719-bca6-59e5faa673d3', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd11a098d60>]}
+[0m03:36:48.008003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0bef2679-e6c3-4719-bca6-59e5faa673d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd11af3ae20>]}
+[0m03:36:48.084677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0bef2679-e6c3-4719-bca6-59e5faa673d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd11a71ffd0>]}
+[0m03:36:48.086834 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:36:48.097119 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:36:48.145426 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:36:48.146311 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:36:48.152179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0bef2679-e6c3-4719-bca6-59e5faa673d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd11959f0d0>]}
+[0m03:36:48.169306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0bef2679-e6c3-4719-bca6-59e5faa673d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd11988b4f0>]}
+[0m03:36:48.170880 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:36:48.173454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0bef2679-e6c3-4719-bca6-59e5faa673d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd11988b6a0>]}
+[0m03:36:48.175291 [info ] [MainThread]: 
+[0m03:36:48.176324 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:36:48.177516 [debug] [MainThread]: Command end result
+[0m03:36:48.206015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd11c996a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd11988b2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd11988b430>]}
+[0m03:36:48.207217 [debug] [MainThread]: Flushing usage events
+[0m03:37:51.462690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f119adfc4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1198b6cc70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1198b6c340>]}
+
+
+============================== 03:37:51.465672 | 9fd5da8d-5da5-434e-8765-5af1886982b9 ==============================
+[0m03:37:51.465672 [info ] [MainThread]: Running with dbt=1.7.4
+[0m03:37:51.466954 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'version_check': 'True', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'log_path': '/app/dwh/logs', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'write_json': 'True', 'printer_width': '80', 'profiles_dir': '/root/.dbt', 'cache_selected_only': 'False', 'no_print': 'None', 'debug': 'False', 'invocation_command': 'dbt run', 'static_parser': 'True', 'use_colors': 'True', 'log_format': 'default', 'partial_parse': 'True', 'fail_fast': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'target_path': 'None'}
+[0m03:37:51.547468 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m03:37:51.548700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '9fd5da8d-5da5-434e-8765-5af1886982b9', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11984d09a0>]}
+[0m03:37:51.612882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9fd5da8d-5da5-434e-8765-5af1886982b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1198b66ca0>]}
+[0m03:37:51.688784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9fd5da8d-5da5-434e-8765-5af1886982b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11984e8400>]}
+[0m03:37:51.690981 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m03:37:51.699213 [debug] [MainThread]: checksum: 248e8aba381ba2d577dce7ab50d2010c2aac45d2b27e6e6214cdd96d2d41fabc, vars: {}, profile: , target: , version: 1.7.4
+[0m03:37:51.752835 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:37:51.754009 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:37:51.758831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9fd5da8d-5da5-434e-8765-5af1886982b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1197c5f0d0>]}
+[0m03:37:51.780752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9fd5da8d-5da5-434e-8765-5af1886982b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1197d0d460>]}
+[0m03:37:51.781994 [info ] [MainThread]: Found 2 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m03:37:51.783239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9fd5da8d-5da5-434e-8765-5af1886982b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1197d0d610>]}
+[0m03:37:51.784947 [info ] [MainThread]: 
+[0m03:37:51.785933 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m03:37:51.786919 [debug] [MainThread]: Command end result
+[0m03:37:51.804353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f119adfc4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f11984e8400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1198111640>]}
+[0m03:37:51.805944 [debug] [MainThread]: Flushing usage events

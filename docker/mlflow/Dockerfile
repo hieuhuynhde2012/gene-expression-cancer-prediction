@@ -12,5 +12,5 @@ WORKDIR /mlflow
 # Expose port MLflow UI
 EXPOSE 5000
 
-# Gán entrypoint mặc định
-ENTRYPOINT ["mlflow"]
+# Gán CMD mặc định
+CMD ["mlflow", "ui", "--host", "0.0.0.0"]

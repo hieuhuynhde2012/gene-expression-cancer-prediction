@@ -1,0 +1,1 @@
+{"_invocation_id": "9fd5da8d-5da5-434e-8765-5af1886982b9", "linked": {"0": {"name": "model.breast_cancer_project.dim_patient", "type": "model"}, "1": {"name": "model.breast_cancer_project.fact_expression", "type": "model"}}}

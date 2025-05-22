@@ -1,0 +1,14 @@
+breast_cancer_project:  # Tên profile, trùng với 'profile' trong dbt_project.yml
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: postgres        # tên service trong docker-compose
+      user: postgres
+      password: postgres
+      port: 5432
+      dbname: breast_cancer
+      schema: public
+      threads: 4
+      keepalives_idle: 0
+      connect_timeout: 10

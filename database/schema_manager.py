@@ -6,7 +6,7 @@ POSTGRES_SCHEMA_PATH = Path(r"F:\gene-expression-cancer-prediction\oltp_db\postg
 
 # ========== MYSQL ========== #
 def create_mysql_schema(connection, cursor):
-    database = "genomics_data"
+    database = "bio_project"
     cursor.execute(f"DROP DATABASE IF EXISTS {database}")
     cursor.execute(f"CREATE DATABASE IF NOT EXISTS {database}")
     connection.commit()
@@ -27,7 +27,8 @@ def create_mysql_schema(connection, cursor):
 
 def validate_mysql_schema(cursor):
     cursor.execute("SHOW TABLES")
-    tables = {table[0] for table in cursor.fetchall()}
+    # Lấy tên bảng từ dict trả về
+    tables = {list(table.values())[0] for table in cursor.fetchall()}
     required_tables = {"genes", "patients", "samples", "gene_expression", "transcripts"}
 
     missing = required_tables - tables

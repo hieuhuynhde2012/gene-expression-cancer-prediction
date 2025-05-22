@@ -45,12 +45,12 @@ services:
     image: mysql/mysql-server:latest
     container_name: bio_mysql
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: bio_project
-      MYSQL_USER: bio_user
-      MYSQL_PASSWORD: bio_pass
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     ports:
-      - "3306:3306"
+      - "3307:3306"  # 🟢 ánh xạ MySQL container ra localhost:3307
     volumes:
       - mysql_data:/var/lib/mysql
     healthcheck:
@@ -61,6 +61,7 @@ services:
     restart: always
     networks:
       - data_network
+
 
   airflow-init:
     <<: *airflow-common
@@ -107,11 +108,13 @@ services:
   dbt:
     container_name: dbt
     build:
-      context: ./dbt
+      context: ../
+      dockerfile: docker/dbt/Dockerfile
     volumes:
       - ../dwh:/app/dwh
+      - ../dwh/.dbt:/root/.dbt
     working_dir: /app/dwh
-    command: ["dbt", "run"]
+    command: ["tail", "-f", "/dev/null"]
     networks:
       - data_network
     depends_on:
