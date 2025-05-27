@@ -102,4 +102,4 @@ if __name__ == "__main__":
     configs = get_database_config()
     for name, conf in configs.items():
         print(f"{name.upper()} JDBC URL: {conf['jdbc_url']}")
-        print(f"{name.upper()} Connection Properties: {conf['connection_properties']}")
+        print(f"{name.upper()} Connection Properties: {conf['connection_properties']}") 
