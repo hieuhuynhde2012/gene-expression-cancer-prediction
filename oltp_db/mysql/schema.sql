@@ -7,13 +7,16 @@ DROP TABLE IF EXISTS genes;
 
 -- Bảng gene
 CREATE TABLE genes (
-    gene_id VARCHAR(255) PRIMARY KEY,
-    ensembl_id VARCHAR(255),
-    gene_symbol VARCHAR(255),
-    gene_description TEXT,
-    gene_type VARCHAR(255)
+    gene_id VARCHAR(50) PRIMARY KEY,
+    gene_name VARCHAR(100),
+    gene_type VARCHAR(50),
+    source VARCHAR(50),
+    seqname VARCHAR(50),
+    start INT,
+    end INT,
+    strand CHAR(1)
 );
-
+>>>>>>> 3e1b979 (run script clean data and use spark write data into mysql)
 -- Bảng bệnh nhân
 CREATE TABLE patients (
     patient_id VARCHAR(255) PRIMARY KEY,
