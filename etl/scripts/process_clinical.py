@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Assuming clinical data is already loaded
-clinical_data = pd.read_csv(r"C:\Users\PC\Desktop\gene-expression-cancer-prediction\clinical_metadata\clinical.tsv", sep="\t")
+clinical_data = pd.read_csv(r"F:\gene-expression-cancer-prediction\data\raw\clinical_metadata\clinical.tsv", sep="\t")
 
 try:
     # Check if the necessary column exists
@@ -61,4 +61,4 @@ df_extract['survival_time_months'] = (clinical_data['days_survival'] / 30.44).ro
 # Display the results
 print(df_extract.head())
 
-df_extract.to_csv("clinical_data_extracted.csv", index=False)
+df_extract.to_csv(r"F:\gene-expression-cancer-prediction\data\processed\clinical_data_extracted.csv", index=False)

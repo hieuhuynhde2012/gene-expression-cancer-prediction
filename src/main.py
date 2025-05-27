@@ -11,10 +11,10 @@ from database.mysql_connect import MySQLConnect
 def main(config):
     #===============MySQL=====================
     with MySQLConnect(
-        config["mysql"].host,
-        config["mysql"].port,
-        config["mysql"].user,
-        config["mysql"].password,
+            config["mysql"]["config"].host,
+            config["mysql"]["config"].port,
+            config["mysql"]["config"].user,
+            config["mysql"]["config"].password,
     ) as mysql_client:
         connection, cursor = mysql_client.connection, mysql_client.cursor
         if not connection or not cursor:
@@ -22,12 +22,12 @@ def main(config):
             return
         # Create MySQL schema
         create_mysql_schema(connection, cursor)
-        cursor.execute(
-            "INSERT INTO patients (patient_id, case_id, age_at_diagnosis, gender, treatment_outcome, survival_time_months) VALUES (%s, %s, %s, %s, %s, %s)", 
-            ("P001", "C001", 45, "M", "Complete Response", 12)
-        )
+        # cursor.execute(
+        #     "INSERT INTO patients (patient_id, case_id, age_at_diagnosis, gender, treatment_outcome, survival_time_months) VALUES (%s, %s, %s, %s, %s, %s)", 
+        #     ("P001", "C001", 45, "M", "Complete Response", 12)
+        # )
         connection.commit()
-        print("Inserted sample data into MySQL patients table.")
+        # print("Inserted sample data into MySQL patients table.")
         validate_mysql_schema(cursor)
         
         

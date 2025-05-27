@@ -44,7 +44,7 @@ class SparkWriteDatabases:
             df (DataFrame): Spark DataFrame to write.
             table_name (str): Target MySQL table name.
             mode (str, optional): Write mode. Defaults to "append".
-            primary_key (str, optional): Primary key column to check duplicates.
+            primary_key (str, optional): Primary key column(s) to check duplicates, comma-separated if multiple.
             ignore_duplicates (bool, optional): Whether to ignore duplicates. Defaults to False.
         
         Raises:
@@ -59,6 +59,9 @@ class SparkWriteDatabases:
             raise Exception(f"Error connecting to MySQL: {e}")
 
         if ignore_duplicates and primary_key:
+            # Handle multiple primary keys
+            primary_keys = [key.strip() for key in primary_key.split(",")]
+
             # Read existing primary keys from the target table
             existing_df = self.spark.read \
                 .format("jdbc") \
@@ -68,10 +71,10 @@ class SparkWriteDatabases:
                 .option("password", self.mysql_config.password) \
                 .option("driver", "com.mysql.cj.jdbc.Driver") \
                 .load() \
-                .select(primary_key)
+                .select(*primary_keys)
 
             # Remove rows from df that already exist in MySQL based on primary key
-            df = df.join(existing_df, on=primary_key, how="left_anti")
+            df = df.join(existing_df, on=primary_keys, how="left_anti")
 
             if df.rdd.isEmpty():
                 print(f"No new records to insert into {table_name}.")
